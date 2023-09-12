@@ -1,14 +1,14 @@
 const char* ssid = "toomuch2";
 const char* password = "pfil1234";
 
-const char* host = "a3p4v2xyz01pye-ats.iot.ap-south-1.amazonaws.com"; //AWS IoT Core--> Settings (Device data endpoint)
+const char* host = "xxxxxxxxx-axx.iot.xxxxxxxxxxxx.amazonaws.com"; //AWS IoT Core--> Settings (Device data endpoint)
 const int Port = 8443;  //typical values are HTTPS= 443, MQTT=8883, and HTTP = 80 but AWS IoT Core uses 84443 for HTTP(s) Certificate secured
 const char *uri = "/topics/AWS-IOT?qos=1";  //see https://docs.aws.amazon.com/iot/latest/developerguide/http.html
 
 // Amazon Root CA 1
 static const char AWS_CERT_CA[] PROGMEM = R"EOF(
 -----BEGIN CERTIFICATE-----
-MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6
 b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTEL
 MAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv
@@ -32,7 +32,7 @@ rqXRfboQnoZsG4q5WTP468SQvvG5
 // Device Certificate
 static const char AWS_CERT_CRT[] PROGMEM = R"KEY(
 -----BEGIN CERTIFICATE-----
-MIIDWTCCAkGgAwIBAgIUOaro8vJ2bhTewnsJ3wdDkmlf8Z0wDQYJKoZIhvcNAQEL
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g
 SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTIzMDkxMDE1MzA1
 MFoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0
@@ -56,7 +56,7 @@ Nvx4xsI67Ix4vXL92e3uOJLtp55GWcTJVH9gjsivYo1poNNPMOkI8z7YM5zx
 // Device Private Key
 static const char AWS_CERT_PRIVATE[] PROGMEM = R"KEY(
 -----BEGIN RSA PRIVATE KEY-----
-MIIEpAIBAAKCAQEArby7qZ1Y61xfitYoe4S3xDlG1KjyNoyJJ1qjgbjJHhsQUHeQ
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 kevZFyxi/1NvsuwBnexIx/ZymJ2Mjggs7WmNqnU0xCTOFi2m72GixjJ4DQp+LHfm
 UAbI06epI5WBh8CCp0Bh4ISP3puRTHbxCjV0K31y7KZUvC9n4ktCqEwEzkJwRKtK
 MOwa0HNzghsoSNl0ne285je6fv5bp0VHCUFeoJT7/606o08+FR7gqqHe4osV1JmN
