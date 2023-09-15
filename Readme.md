@@ -11,4 +11,4 @@ Role set (IAM) mytextRule attached from policies and route the subscribed topic 
 <p align="center">
   <img src="https://github.com/prashun06/AWS_IoT_Core_project/blob/main/Images/text%20Mesg.jpg" width="30%" height="10%" />
 </p>
-<space>
+
