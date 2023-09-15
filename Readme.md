@@ -16,4 +16,5 @@ Role set (IAM) mytextRule attached from policies and route the subscribed topic 
 ## 1. Save the json data into S3 bucket
 
 First create rule from message route->action S3(create a bucket (public access to keep simple now))->Create IAM rule->create
+[Json for Bucket policy here](https://github.com/prashun06/AWS_IoT_Core_project/blob/main/policy_json.json/)
 
