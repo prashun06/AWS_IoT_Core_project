@@ -1,4 +1,4 @@
-
+//Bucket policy
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -11,3 +11,22 @@
         }
     ]
 }
+
+
+
+//Cross-origin resource sharing (CORS)
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": [],
+        "MaxAgeSeconds": 6000
+    }
+]
