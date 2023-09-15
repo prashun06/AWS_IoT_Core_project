@@ -1,5 +1,5 @@
 First coded tested by MQTT test client panel<br>
- 
+<space>
 ## 1. Push Notification to Mobile(SMS) from AWS 
 
 SQL statement <br> 
@@ -10,4 +10,4 @@ Role set (IAM) mytextRule attached from policies and route the subscribed topic 
   <img src="https://github.com/prashun06/AWS_IoT_Core_project/blob/main/Images/SNS.png" alt="AWS Message routing panal"/>
 </p>
 
-
+<space>
