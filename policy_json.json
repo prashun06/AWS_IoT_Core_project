@@ -1,4 +1,4 @@
-//Bucket policy
+#Bucket policy
 {
     "Version": "2012-10-17",
     "Statement": [
