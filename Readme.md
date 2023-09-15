@@ -1,5 +1,5 @@
 First coded tested by MQTT test client panel<br>
-<space>
+
 ## 1. Push Notification to Mobile(SMS) from AWS 
 
 SQL statement <br> 
