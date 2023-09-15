@@ -1,4 +1,4 @@
-First coded tested by MQTT test client panel<br>
+First code tested by MQTT test client panel<br>
 
 ## 1. Push Notification to Mobile(SMS) from AWS 
 SQL statement <br> 
