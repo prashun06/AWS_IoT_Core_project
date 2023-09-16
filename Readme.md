@@ -16,7 +16,7 @@ Role set (IAM) mytextRule attached from policies and route the subscribed topic 
 ## 2. Save the json data into S3 bucket
 
 First create rule from message route->action S3(create a bucket (public access to keep simple now))->key(the name of file)->Create IAM rule->create <br> 
-[Json for Bucket policy here](https://github.com/prashun06/AWS_IoT_Core_project/blob/main/policy_json.json/)
+[Json for Bucket policy here](https://github.com/prashun06/AWS_IoT_Core_project/blob/main/policy_json.json/)<br> 
 
 ## 3. Kinesis Firehose for stroring timeframe defined data(Json)
 First create rule from message route->action Kinesis Firehose data stream(create Kinesis Firehose)->Direct put ->Create IAM rule(automatically)-> data separetion(/t) ->create <br> 
