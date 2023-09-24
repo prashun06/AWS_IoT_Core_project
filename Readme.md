@@ -25,4 +25,7 @@ Json data came from ESP32 and Kinesis firehose stream the data to S3 bucket and 
 ## 4. DynamoDB data store from AWS Iot core from Node device
 First create rule from message route->action DynamoDB-> make a table->Partition key(ID), Sorting key(time satmp) (par key value must be the node json value and for time stamp use ${timeStamp()} buildin funct)->auto generated IAM rule->subscribe the topic <br> 
 SELECT * FROM 'AWS-IoT <br> 
-## 5. 
+## 5. Data Pipeline of IoT from DynamoDB to S3
+It is note supported in south asia <br> 
+## 6. AWS Glue to transform the data formate
+
