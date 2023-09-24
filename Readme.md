@@ -18,6 +18,11 @@ Role set (IAM) mytextRule attached from policies and route the subscribed topic 
 First create rule from message route->action S3(create a bucket (public access to keep simple now))->key(the name of file)->Create IAM rule->create <br> 
 [Json for Bucket policy here](https://github.com/prashun06/AWS_IoT_Core_project/blob/main/policy_json.json/)<br> 
 
-## 3. Kinesis Firehose for stroring timeframe defined data(Json)
+## 3. Kinesis Firehose for storing timeframe defined data(Json)
 First create rule from message route->action Kinesis Firehose data stream(create Kinesis Firehose)->Direct put ->Create IAM rule(automatically)-> data separetion(/t) ->create <br> 
 Json data came from ESP32 and Kinesis firehose stream the data to S3 bucket and save it with timeframe.
+
+## 4. DynamoDB data store from AWS Iot core from Node device
+First create rule from message route->action DynamoDB-> make a table->Partition key(ID), Sorting key(time satmp) (par key value must be the node json value and for time stamp use ${timeStamp()} buildin funct)->auto generated IAM rule->subscribe the topic <br> 
+SELECT * FROM 'AWS-IoT <br> 
+## 5. 
